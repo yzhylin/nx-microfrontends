@@ -4,8 +4,7 @@ import * as ReactDOM from 'react-dom/client';
 import App from './app/app';
 
 const root = ReactDOM.createRoot(
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-  document.getElementById('root')!
+  document.getElementById('root') as HTMLElement
 );
 root.render(
   <StrictMode>
