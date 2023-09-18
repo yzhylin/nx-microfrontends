@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "release": "npx nx run-many --target=release --all=true --parallel=false"
   },
   "private": true,
   "devDependencies": {
@@ -17,6 +18,10 @@
     "@nrwl/react": "^14.5.4",
     "@nrwl/web": "14.5.4",
     "@nrwl/workspace": "14.5.4",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.0.6",
+    "@semantic-release/npm": "^11.0.0",
     "@testing-library/react": "13.3.0",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.7",
@@ -38,6 +43,8 @@
     "nx": "14.5.4",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",
+    "semantic-release": "^22.0.0",
+    "semantic-release-unsquash": "^0.1.2",
     "ts-jest": "27.1.4",
     "ts-node": "~10.8.0",
     "typescript": "~4.7.2"

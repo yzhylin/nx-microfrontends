@@ -3,6 +3,12 @@
   "sourceRoot": "apps/blog/src",
   "projectType": "application",
   "targets": {
+    "release": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx semantic-release"
+      }
+    },
     "build": {
       "executor": "@nrwl/web:webpack",
       "outputs": ["{options.outputPath}"],
